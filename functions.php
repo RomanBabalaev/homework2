@@ -6,7 +6,7 @@ function task1($arrayString, $flag = false)
    {
    echo "<p>".$value."</p>";
    }
-
+   if()
 }
 
 function task2() {
