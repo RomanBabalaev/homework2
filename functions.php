@@ -1,7 +1,11 @@
 <?php
 
-function task1($arrayString,$flag=false) {
-    // TODO:
+function task1($arrayString,$flag=false) 
+{
+   foreach ($arrayString as $value)
+   {
+   echo <p>.$value.</p>;
+   }
 }
 
 function task2() {
