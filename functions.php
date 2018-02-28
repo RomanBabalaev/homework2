@@ -13,8 +13,27 @@ function task1($arrayString, $flag = false)
    }
 }
 
-function task2() {
-    // TODO:
+function task2($str,$calc) 
+{
+   foreach ($str as $value)
+   {
+   if ($value > 0){
+      swith ($value){
+         case 1: echo $str.'+';   
+	   break;
+         case 2: echo $str.'-';      
+      break;
+         case 3: echo $str.'*';       
+	   break;
+         case 4: echo $str.'/';      
+      break;
+      }
+      else 
+      {
+      echo return "Неверный оператор"; 
+      }
+      }
+   }
 }
 
 function task3() {
