@@ -27,11 +27,9 @@ function task2($str,$calc)
 	   break;
          case '/': echo $str.'/';      
       break;
+	      default return "Неверный оператор";
       }
-      else 
-      {
-      echo return "Неверный оператор"; 
-      }
+      
       }
    }
 }
