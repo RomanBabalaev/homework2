@@ -8,7 +8,7 @@ function task1($arrayString, $flag = false)
    }
    if($flag == true)
    {
-      return  imlode($arrayString);
+      return  implode($arrayString);
       
    }
 }
