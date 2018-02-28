@@ -6,10 +6,10 @@ function task1($arrayString, $flag = false)
    {
    echo "<p>".$value."</p>";
    }
-   if( $arrayString == true)
+   if($flag == true)
    {
-      echo  imlode($arrayString) "Одна объединенная строка";
-      return;
+      return  imlode($arrayString);
+      
    }
 }
 
