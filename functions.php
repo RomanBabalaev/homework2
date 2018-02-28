@@ -18,14 +18,14 @@ function task2($str,$calc)
    foreach ($str as $value)
    {
    if ($value > 0){
-      swith ($value){
-         case 1: echo $str.'+';   
+      swith ($calc){
+         case '+': echo $str.'+';   
 	   break;
-         case 2: echo $str.'-';      
+         case '-': echo $str.'-';      
       break;
-         case 3: echo $str.'*';       
+         case '*': echo $str.'*';       
 	   break;
-         case 4: echo $str.'/';      
+         case '/': echo $str.'/';      
       break;
       }
       else 
