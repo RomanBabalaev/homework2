@@ -4,7 +4,7 @@ function task1($arrayString,$flag=false)
 {
    foreach ($arrayString as $value)
    {
-   echo "<p>"."$value"."</p>";
+   echo "<p>".$value."</p>";
    }
 }
 
