@@ -6,7 +6,11 @@ function task1($arrayString, $flag = false)
    {
    echo "<p>".$value."</p>";
    }
-   if()
+   if( $arrayString == true)
+   {
+      echo  imlode($arrayString) "Одна объединенная строка";
+      return;
+   }
 }
 
 function task2() {
