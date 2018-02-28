@@ -16,16 +16,17 @@ function task1($arrayString, $flag = false)
 function task2($str,$calc) 
 {
    foreach ($str as $value)
+	   $result = 0;
    {
    if ($value > 0){
       swith ($calc){
-         case '+': echo $str.'+';   
+         case '+': $result.'+'.=$value;   
 	   break;
-         case '-': echo $str.'-';      
-      break;
-         case '*': echo $str.'*';       
+         case '-':  $result.'-'. = $value;      
+      	   break;
+         case '*': $result .'*'. = $value;       
 	   break;
-         case '/': echo $str.'/';      
+         case '/': $result.'/'.= $value;      
       break;
 	      default return "Неверный оператор";
       }
