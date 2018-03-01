@@ -48,9 +48,35 @@ function task3($str);
 	}
 }
 
-function task4() {
-    // TODO:
+function task4($rows, $cols) {
+    {
+	if(gettype ($rows) == "integer" and gettype ($cols) == "integer" )
+	{
+		$tab = " ";
+		echo $tab .= '<table border="1">';
+		for ($tr=1; $tr < $cols+1 ; $tr++){
+			$tab .= '<tr>';
+		
+		for ($td=1; $td < $rows+1; $td++)
+			{
+		$tab .= '<td>';	
+		$tab .= $tr*$td;
+		$tab .='</td>';
+		}
+		
+		$tab .='</tr>';
+			}
+		$tab .= '</table>';
+		echo $tab;
+	}
+
+	else
+	{
+	echo 'Ошибка, только целые числа';
+		return;
+	}
 }
+
 
 function task5() {
     // TODO:
