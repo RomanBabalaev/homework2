@@ -48,7 +48,7 @@ function task3($str)
 
 function task4($rows, $cols) {
     {
-	if(gettype ($rows) == "integer" and gettype ($cols) == "integer" )
+	if(is_int($rows)>=1 or is_int($cols)>=1)
 	{
 		$tab = " ";
 		echo $tab .= '<table border="1">';
