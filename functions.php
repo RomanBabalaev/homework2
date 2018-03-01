@@ -19,24 +19,33 @@ function task2($str,$calc)
 	   $result = 0;
    {
    if ($value > 0){
-      swith ($calc){
-         case '+': $result.'+'.=$value;   
-	   break;
-         case '-':  $result.'-'. = $value;      
-      	   break;
-         case '*': $result .'*'. = $value;       
-	   break;
-         case '/': $result.'/'.= $value;      
+      switch ($calc){
+         case '+': $result += $value;   
+	break;
+	case '-': $result -= $value;      
+         break;
+         case '*': $result *= $value;       
+	  break;
+         case '/': $result /= $value;      
       break;
-	      default return "Неверный оператор";
+		  default: return  "Неверный оператор";
       }
-      
+      echo $result;
       }
    }
 }
 
-function task3() {
-    // TODO:
+function task3($str);
+{
+	if (is_string($str))
+	{
+		if(in_array($str, array('-','+','/','*'))){
+		$arr = func_get_args();
+			$a = $arr[0];
+			//по логике можно воспользоваться task2
+			
+		}	 
+	}
 }
 
 function task4() {
