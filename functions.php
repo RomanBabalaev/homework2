@@ -13,21 +13,20 @@ function task1($arrayString, $flag = false)
    }
 }
 
-function task2($str,$calc) 
-{
-   foreach ($str as $value)
-	   $result = 0;
+function task2($arrayNumber,$operator)
+{   $result = 0;
+   foreach ($arrayNumber as $value)
    {
    if ($value > 0){
-      switch ($calc){
-         case '+': $result += $value;   
-	break;
-	case '-': $result -= $value;      
-         break;
+      switch ($operator){
+         case '+': $result += $value;
+	    break;
+	    case '-': $result -= $value;
+	    break;
          case '*': $result *= $value;       
-	  break;
+	    break;
          case '/': $result /= $value;      
-      break;
+        break;
 		  default: return  "Неверный оператор";
       }
       echo $result;
