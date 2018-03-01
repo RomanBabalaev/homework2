@@ -78,10 +78,24 @@ function task4($rows, $cols) {
 }
 
 
-function task5() {
-    // TODO:
+function task5($arr) {
+    if(gettype ($arr) == "string"){
+	   preg_match_all ('|',$arr, $pol);
+		$str = implode(array_reverse($pol[0]));
+   }
 }
-
+function task5_1($arr)
+{
+if(task5 == $str and $str == $arr ){
+	return  true;
+	}
+	else{
+	return false;
+		echo "Просто строка";
+	}
+}
+	
+	
 function task6() {
     // TODO:
 }
