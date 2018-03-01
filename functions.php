@@ -13,7 +13,7 @@ function task1($arrayString, $flag = false)
    }
 }
 
-function task2($arrayNumber,$operator)
+function task2($arrayNumber, $operator)
 {   $result = 0;
    foreach ($arrayNumber as $value)
    {
@@ -34,17 +34,16 @@ function task2($arrayNumber,$operator)
    }
 }
 
-function task3($str);
+function task3($str)
 {
-	if (is_string($str))
-	{
-		if(in_array($str, array('-','+','/','*'))){
+		if(in_array($str, array('-','+','/','*')))
+		{
 		$arr = func_get_args();
 			$a = $arr[0];
 			//по логике можно воспользоваться task2
 			
 		}	 
-	}
+
 }
 
 function task4($rows, $cols) {
