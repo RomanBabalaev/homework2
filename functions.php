@@ -15,9 +15,10 @@ function task1($arrayString, $flag = false)
 
 function task2($arrayNumber, $operator)
 {   $result = 0;
-   foreach ($arrayNumber as $value)
+   	var_dump($arrayNumber);
+ 	foreach ($arrayNumber as $value)
    {
-   if ($value > 0){
+	   if ($value > 0){
       switch ($operator){
          case '+': $result += $value;
 	    break;
@@ -28,10 +29,10 @@ function task2($arrayNumber, $operator)
          case '/': $result /= $value;      
         break;
 		  default: return  "Неверный оператор";
-      }
-      echo $result;
+   }
       }
    }
+ echo $result;
 }
 
 function task3($str)
