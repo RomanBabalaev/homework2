@@ -48,9 +48,13 @@ function task3($str)
 }
 
 function task4($rows, $cols) {
-    {
-	if(is_int($rows)>=1 or is_int($cols)>=1)
+	
+	if(($rows)<1 or ($cols)<1 )
 	{
+		echo 'Ошибка, только целые числа';
+		return;		
+	}
+		
 		$tab = " ";
 		echo $tab .= '<table border="1">';
 		for ($tr=1; $tr < $cols+1 ; $tr++){
@@ -67,13 +71,9 @@ function task4($rows, $cols) {
 			}
 		$tab .= '</table>';
 		echo $tab;
-	}
-
-	else
-	{
-	echo 'Ошибка, только целые числа';
-		return;
-	}
+		task4($rows-1, $cols-1);	
+		
+	  	
 }
 
 
