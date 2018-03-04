@@ -41,7 +41,7 @@ function task3($str)
 		{
 		$arr = func_get_args();
 			$a = $arr[0];
-			//по логике можно воспользоваться task2
+			task2($str, $arr)
 			
 		}	 
 
