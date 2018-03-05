@@ -102,8 +102,9 @@ function task5_1($polin){
 }
 	
 	
-function task6() {
-    // TODO:
+function task6() 
+{
+    echo date("d.m.Y".' '."H:i");
 }
 
 function task7() {
