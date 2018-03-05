@@ -77,21 +77,28 @@ function task4($rows, $cols) {
 }
 
 
-function task5($arr) {
-    if(gettype ($arr) == "string"){
-	   preg_match_all ('|',$arr, $pol);
-		$str = implode(array_reverse($pol[0]));
-   }
+function task5($polin){
+$polin = str_replace(' ','', $polin);//
+$polin = mb_strtolower($polin);// перевод в нижний регистр
+
+		
+$proV = preg_split('//u' ,$polin, -1, PREG_SPLIT_NO_EMPTY);// проверка строки
+$proV2 = array_reverse($proV);
+return $proV == $proV2;
 }
-function task5_1($arr)
-{
-if(task5 == $str and $str == $arr ){
-	return  true;
+
+function task5_1($polin){
+	if (task5($polin))
+	{
+		echo  "Это полиндром";
+		return;
 	}
-	else{
-	return false;
-		echo "Просто строка";
+	else 
+	{
+		echo "Это не полинбром";
+		return;
 	}
+
 }
 	
 	
