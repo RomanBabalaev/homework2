@@ -104,7 +104,9 @@ function task5_1($polin){
 	
 function task6() 
 {
-    echo date("d.m.Y".' '."H:i");
+	echo date("d.m.Y".' '."H:i").'<br>';
+	$tt = time()+ (7 * 24 * 60 * 60);
+	echo 'Сейчас: '. date('Y-m-d') ;
 }
 
 function task7() {
