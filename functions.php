@@ -130,6 +130,18 @@ echo $contents;
 }
 
 
-function task9() {
-    // TODO:
+function task9($fName)
+{
+    $fo = fopen($fName, "a");
+    $text = "Hello, again!";
+    $wr = fwrite($fo, $text);
+    if ($wr)
+    {
+       echo "Успешно";
+    }
+    else
+        {
+            echo "Ошибка";
+        }
+    fclose($fo);
 }
