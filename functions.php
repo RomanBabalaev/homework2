@@ -122,6 +122,14 @@ $str = str_replace('две', 'Три', $str);
 echo $str;
 }
 
+function task8 ($fName){
+$handle = fopen($fName, "rt");
+$contents = fread($handle, filesize($fName));
+fclose($handle);
+echo $contents;
+}
+
+
 function task9() {
     // TODO:
 }
