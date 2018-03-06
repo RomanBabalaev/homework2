@@ -108,15 +108,18 @@ function task6()
 	$tt = time()+ (7 * 24 * 60 * 60);
 	echo 'Сейчас: '. date('Y-m-d') ;
 }
-
+Задание 7
 $str ='Карл у Клары украл Кораллы'; 
 setlocale(LC_ALL, 'ru_RU.UTF-8');
 $str = str_replace('К', ' ', $str);
 echo $str;
 }
-
-function task8() {
-    // TODO:
+Задание 8
+$str ='Две бутылки лимонада, две панки кофе и две девушки'; 
+setlocale(LC_ALL, 'ru_RU.UTF-8');
+$str = mb_strtolower($str);
+$str = str_replace('две', 'Три', $str);
+echo $str;
 }
 
 function task9() {
