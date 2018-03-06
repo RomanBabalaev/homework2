@@ -109,8 +109,10 @@ function task6()
 	echo 'Сейчас: '. date('Y-m-d') ;
 }
 
-function task7() {
-    // TODO:
+$str ='Карл у Клары украл Кораллы'; 
+setlocale(LC_ALL, 'ru_RU.UTF-8');
+$str = str_replace('К', ' ', $str);
+echo $str;
 }
 
 function task8() {
